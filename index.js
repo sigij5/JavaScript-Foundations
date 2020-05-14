@@ -101,7 +101,7 @@ function mortgageCalculator(yourPrincipal, yourInterestRate, yourYears, yourCred
     const denominator = Math.pow((1 + monthlyInterestRate), periods) - 1;
     const monthlyRate = yourPrincipal * (numerator / denominator);
 
-    return (name + "with an interest rate of " + yourInterestRate + ", your monthly rate is " + "$" + monthlyRate.toFixed(2));
+    return (name + " with an interest rate of " + yourInterestRate + ", your monthly rate is " + "$" + monthlyRate.toFixed(2));
 }
 
 
@@ -134,7 +134,7 @@ function variableInterestRate(yourPrincipal, yourInterestRate, yourYears, yourCr
         }
  }
 
- console.log(variableInterestRate(200000, 0.06, 30, 740));
+ console.log(variableInterestRate(200000, 0.04, 30, 740));
  
 
 
@@ -146,6 +146,9 @@ function variableInterestRate(yourPrincipal, yourInterestRate, yourYears, yourCr
 
 /*  🏡 Add  `Property Tax`, `Homeowner's insurance` and `HOA fees` as parameters in your function to calculate total monthly spending on housing */
 
+ function totalMonthlySpending(yourPrincipal, yourInterestRate, yourYears, yourCreditScore, propertyTax, insurance, hoa){
+    
+ }
 
 /* 🏡 Build a calculator function that accepts `monthly payment` and `interest rate` and returns the maximum loan that a person could afford */
 
